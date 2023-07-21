@@ -8,6 +8,7 @@
 import UIKit
 import AVFoundation
 
+
 class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
     
     @IBOutlet weak var microphoneToggleButton: UIButton!
@@ -15,7 +16,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     var audioengine:AVAudioEngine!
     var isWorking = false
     var isGranted = false
-    var volume:Float = 3.87
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +27,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         do{
             audiosession = AVAudioSession.sharedInstance()
             audioengine = AVAudioEngine()
-            audioengine.inputNode.volume = volume
-            audioengine.mainMixerNode.outputVolume = volume
-            try audiosession.setCategory(.playAndRecord, mode: .default, options: .defaultToSpeaker)
+            try audiosession.setCategory(.playAndRecord, mode: .videoRecording, options: [.duckOthers ,.defaultToSpeaker])
             try audiosession.setActive(true)
             switch audiosession.recordPermission {
             case AVAudioSession.RecordPermission.granted:

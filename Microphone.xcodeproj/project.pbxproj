@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		167B91692A6ADDF000B979EC /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B91672A6ADDF000B979EC /* AVFAudio.framework */; };
+		167B916A2A6ADDF000B979EC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167B91682A6ADDF000B979EC /* AudioToolbox.framework */; };
 		16CCB5962A692F3C00F4A01B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CCB5952A692F3C00F4A01B /* AppDelegate.swift */; };
 		16CCB5982A692F3C00F4A01B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CCB5972A692F3C00F4A01B /* SceneDelegate.swift */; };
 		16CCB59A2A692F3C00F4A01B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CCB5992A692F3C00F4A01B /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		167B91672A6ADDF000B979EC /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
+		167B91682A6ADDF000B979EC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		16CCB5922A692F3C00F4A01B /* Microphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Microphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CCB5952A692F3C00F4A01B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16CCB5972A692F3C00F4A01B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				16CCB5B02A6941C600F4A01B /* AVFoundation.framework in Frameworks */,
+				167B91692A6ADDF000B979EC /* AVFAudio.framework in Frameworks */,
+				167B916A2A6ADDF000B979EC /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,8 @@
 		16CCB5AE2A6941C600F4A01B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				167B91682A6ADDF000B979EC /* AudioToolbox.framework */,
+				167B91672A6ADDF000B979EC /* AVFAudio.framework */,
 				16CCB5AF2A6941C600F4A01B /* AVFoundation.framework */,
 			);
 			name = Frameworks;
