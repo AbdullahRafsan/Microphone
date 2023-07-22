@@ -45,18 +45,17 @@
                             <constraint firstItem="4BX-wt-Qhu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mYU-vz-pko"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="মাইক্রোফোন" leftItemsSupplementBackButton="YES" id="Q6r-Ll-NQN">
-                        <barButtonItem key="backBarButtonItem" title="মাইক্রোফোন" id="sFo-ef-VxJ">
-                            <color key="tintColor" name="AccentColor"/>
-                        </barButtonItem>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="মাইক্রোফোন" id="Q6r-Ll-NQN">
                         <barButtonItem key="rightBarButtonItem" style="done" id="buB-x6-Hef">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="nKE-b6-ebQ">
                                 <rect key="frame" x="289.66666666666669" y="5" width="87.333333333333314" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="  সম্পর্কে  "/>
+                                <buttonConfiguration key="configuration" style="plain" title="সম্পর্কে">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
+                                </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -68,6 +67,7 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="microphoneToggleButton" destination="4BX-wt-Qhu" id="s9B-wF-AJk"/>
                     </connections>
@@ -131,34 +131,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="সতর্কতাঃ ফোন ম্যকের সাথে যুক্ত না থাকলে অ্যাপটি ব্যাবহার করবেন না " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="930-pe-C1m">
-                                <rect key="frame" x="46.666666666666657" y="711.33333333333337" width="300" height="40.666666666666629"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="SAJ-wa-ZZ6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JpR-2K-dzh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fEf-cL-6vp" firstAttribute="centerX" secondItem="I8e-2P-Wkw" secondAttribute="centerX" id="5l1-an-LKX"/>
-                            <constraint firstItem="930-pe-C1m" firstAttribute="top" secondItem="dgh-eN-GJs" secondAttribute="bottom" constant="20" id="Dhc-Tb-I9C"/>
                             <constraint firstItem="dgh-eN-GJs" firstAttribute="top" secondItem="fEf-cL-6vp" secondAttribute="bottom" constant="25" id="GhY-Zy-u7q"/>
                             <constraint firstItem="fEf-cL-6vp" firstAttribute="top" secondItem="6Q0-Fb-t7d" secondAttribute="bottom" constant="40" id="Jcx-g9-eJf"/>
                             <constraint firstItem="P0T-z5-oQR" firstAttribute="centerX" secondItem="I8e-2P-Wkw" secondAttribute="centerX" id="d4q-Qa-U2a"/>
                             <constraint firstItem="P0T-z5-oQR" firstAttribute="top" secondItem="qsu-K1-CKu" secondAttribute="bottom" constant="40" id="g3T-sF-PwZ"/>
                             <constraint firstItem="6Q0-Fb-t7d" firstAttribute="top" secondItem="P0T-z5-oQR" secondAttribute="bottom" constant="12" id="hd9-zm-7Rr"/>
-                            <constraint firstItem="930-pe-C1m" firstAttribute="centerX" secondItem="I8e-2P-Wkw" secondAttribute="centerX" id="mbh-bA-EGP"/>
                             <constraint firstItem="qsu-K1-CKu" firstAttribute="top" secondItem="JpR-2K-dzh" secondAttribute="top" constant="50" id="rQ8-X4-N0d"/>
                             <constraint firstItem="6Q0-Fb-t7d" firstAttribute="centerX" secondItem="I8e-2P-Wkw" secondAttribute="centerX" id="tI9-68-YWj"/>
                             <constraint firstItem="dgh-eN-GJs" firstAttribute="centerX" secondItem="I8e-2P-Wkw" secondAttribute="centerX" id="uHf-cM-Zqt"/>
                             <constraint firstItem="qsu-K1-CKu" firstAttribute="centerX" secondItem="I8e-2P-Wkw" secondAttribute="centerX" id="wD2-RQ-pKf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="সম্পর্কে" largeTitleDisplayMode="never" id="2pw-Ix-aR6"/>
+                    <navigationItem key="navigationItem" title="সম্পর্কে" id="2pw-Ix-aR6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTG-Oa-DJ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,12 +158,12 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Tr-fT-9mw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bMs-lv-6yf">
-                        <rect key="frame" x="0.0" y="59" width="393" height="103.33333333333334"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bMs-lv-6yf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -194,13 +183,10 @@
     <resources>
         <image name="Microphone" width="1024" height="1024"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.5607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
