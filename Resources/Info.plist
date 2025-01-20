@@ -12,10 +12,10 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>Icon-App-20x20</string>
-				<string>Icon-App-29x29</string>
-				<string>Icon-App-40x40</string>
-				<string>Icon-App-60x60</string>
+				<string>AppIcon-20</string>
+				<string>AppIcon-29</string>
+				<string>AppIcon-40</string>
+				<string>AppIcon-60</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>
