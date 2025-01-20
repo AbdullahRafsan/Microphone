@@ -1,0 +1,9 @@
+Package: rafsan.abdullah.microphone
+Name: Microphone
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Microphone
+Maintainer: rafsan
+Author: rafsan
+Section: Utilities
+Depends: firmware (>= 12.2) | ${LIBSWIFT}
